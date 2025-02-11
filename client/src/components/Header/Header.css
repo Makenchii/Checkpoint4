@@ -1,0 +1,16 @@
+.app-header {
+  background-color: #3498db;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-content h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
