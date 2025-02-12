@@ -1,0 +1,56 @@
+.about-page {
+  padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.about-page h2 {
+  color: #f0c040;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-family: "Georgia", serif;
+}
+
+.about-content {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.about-content p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+.navigation-links {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #333;
+}
+
+.home-link {
+  display: inline-block;
+  color: #f0c040;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid #f0c040;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.home-link:hover {
+  background-color: #f0c040;
+  color: #1a1a1a;
+}
+
+@media (min-width: 768px) {
+  .about-page {
+    padding: 2rem;
+  }
+
+  .about-content {
+    padding: 2rem;
+  }
+}

@@ -1,9 +1,9 @@
-import React from "react";
+import "./Footer.css";
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-600 text-white p-4 text-center">
-      <p>© 2024 Mon Application</p>
+    <footer className="app-footer">
+      <p>© 2025 JazzStream - Votre bibliothèque de jazz</p>
     </footer>
   );
 }

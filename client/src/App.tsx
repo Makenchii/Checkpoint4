@@ -1,37 +1,20 @@
-import { useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import About from "./pages/About";
+import AlbumDetails from "./pages/AlbumDetails";
+import Home from "./pages/Home"; // Ajustez le chemin selon votre structure
 import "./App.css";
 
 export default function App() {
-  const [backgroundColor, setBackgroundColor] = useState("bg-gray-100");
-
-  const changeBackground = () => {
-    const colors = [
-      "bg-blue-100",
-      "bg-green-100",
-      "bg-purple-100",
-      "bg-red-100",
-    ];
-    const randomColor = colors[Math.floor(Math.random() * colors.length)];
-    setBackgroundColor(randomColor);
-  };
-
   return (
-    <div className={`app-container ${backgroundColor}`}>
+    <div className="app-container">
       <Header />
-
-      <main className="main-content">
-        <h2>Contenu Principal</h2>
-        <button
-          type="button"
-          onClick={changeBackground}
-          className="color-change-button"
-        >
-          Changer de couleur
-        </button>
-      </main>
-
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/albums" element={<AlbumDetails />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
       <Footer />
     </div>
   );
